@@ -1,0 +1,108 @@
+Terminal Commands:
+
+
+Navigating the linux terminal:
+•	cd = move up
+o	cd ../ = go back a directory
+o	cd .. = go up a directory
+o	cd ~ = go home directory 
+o	cd / = go root directory
+o	cd /home/superbonniefanb/Documents = goes a path you list so you can get to hidden files faster
+•	ls = list
+o	ls -l = list in details
+o	ls -a = shows hidden files
+•	pwd = it will list the amount of directories you are already inside
+
+
+CRUD (Create, Read, Update, Delete) Files & Directories
+•	Create
+o	touch = make text document
+o	mkdir = make folder
+•	Read
+o	cat = shows folders/files inside a folder 
+o	less = allows you to scroll through a file
+	to exit you click “q”
+•	Update
+o	nano = you can open text files with this
+o	Echo “Text” > [filename] = adds text to a file
+o	mv = renames folders/files or you can use it to move folders and files.
+•	Remove
+•	rmdir = delete folder
+•	rm = delete file
+•	rn -r = removes folder and its contents
+
+
+File Permissions
+Understanding Permsions
+o	ls -l - Can also check file permissions
+o	Permissions are also shown as –rwxrwxrwx, divided into User (u), divided into Group (g), and others (o). Basically, each rwx represents each.
+	r – Read (4)
+	w – Write (2)
+	x – Execute(1)
+Changing Permissions
+o	chmod u+x [filename] – When doing this it adds the execute permission for said user.
+o	chmod g-w [filename] – When doing this it removes the permissions for the user to write other people's permissions
+Numeric method:
+o	chmod 755 [filename] - Sets permissions to rwxr-xr-x meaning that the user can read, write and execute, Group can red but it cannot write and it can execute, and finally for others they cant do the same. 
+o	chmod 644 [filename] = sets it so the owner can read and write but the group and others can only read. 6 = read and write 4 = read
+	7 = read write and execute
+	6 = read and write
+	5 = read and execute
+	4 = read
+
+
+Using Sudo and its superuser privileges
+Basics:
+o	sudo = sudo means Super User Do. It allows you to do things you cant normally do because of security reasons. Basically, giving you superuser privileges
+	sudo chown [new owner]:[newgroup] – this would change the users ownership over something.
+o	sudo apt update – This would update all the packages
+o	su – This would mean switch user.
+
+superbonniefanb@awesomesaucer:~$ - at the start of this directory is our user. This is the user that we are logged into, next awesomesaucer is the pc name, that’s what other networks will read it as. The: is the start of directory, ~ means superbonniefanb/home and $ means to type here.
+
+
+ 
+Main Computer Components are
+RAM – Pc's memory that allows you to open many applications
+CPU
+GC
+CPU cooler
+Mother Board -  Main circuit board in a pc. Basically connects everything to itself
+Monitor – Allows you to see stuff
+Keyboard – Allows you to type
+Mouse-Allows you to move the mouse
+Speakers – Allows you to hear audio
+Hard Drive - Stores all your data like programs files applications and what not.
+Case – Stores components like RAM, CPU etc into it.
+
+
+ 
+Binary
+Every value we go up by we multiply it by 2. For example we start with the value of 1. then we want to do
+01+01 then it would be 10 which would be the value of 2. or we can do 101010100 + 010010111 = 11101011 which would equal 938. every
+value that has a 1 is true and every value that has a 0 is false
+Binary is the language computers speak 
+Logic Gates are terms such as
+Is Not And If Nand
+Is is basically if A is True
+Not is basically if A is not True
+And is basically if A and B are true 
+If is basically if A or B are true
+Nand is basically if A and B are not true
+
+
+
+Terminology
+IP Address is basically the home for your devices, this helps your device be able to interact with other devices.
+
+
+
+Git and its neat stuff
+git init – this would initialize a git repository.
+Repository often said as “repo” is a project folder that contains your project files and the complete history of its changes, this goes from all the way back to when the game was created and who created it.
+Key concepts or repo
+1. Working Directory
+This folder on your pc is where you actively work in with your projects and shows the current state of the file
+2. Staging Area (or index)
+This is the temporary storage area. This is where Git keeps track of changes that will go into your next commit. 	Before you commit changes, you add them to the staging area using git add.
+	3. Commit history
