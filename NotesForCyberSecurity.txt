@@ -106,3 +106,7 @@ This folder on your pc is where you actively work in with your projects and show
 2. Staging Area (or index)
 This is the temporary storage area. This is where Git keeps track of changes that will go into your next commit. 	Before you commit changes, you add them to the staging area using git add.
 	3. Commit history
+	
+	
+	
+	woah some more NEW notes
