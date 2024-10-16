@@ -172,8 +172,36 @@ Bash Scripting:
 			
 			chmod +x script.sh
 			./script.sh
+			
+		Heres a custom script that can check if a directory exists,
+		if it doesn't it will create one
+		
+		
+		#!/bin/bash
 
+		DIR="awesomesauce"
+
+		if [ -d "$DIR" ]; then
+		    echo "Directory $DIR already exists."
+		else
+		    echo "Directory $DIR does not exist. Creating 
+		    it now..."
+  		  mkdir "$DIR"
+   		 echo "Directory $DIR created successfully."
+		fi
+System Monitoring
 	
+	What is system monitoring?
+	
+		System monitoring is the process of continuously observing
+		tracking the performance health and activity of your
+		computer system or network. this would involve collecting
+		& analyzing data related to the system like CPU usage,
+		memory consumption, disk I/O, and much more to ensure
+		that the system is running smoothly and to detect
+		if there are any potential issues.
+	
+	File Permissions and how they work.
 
 
 
