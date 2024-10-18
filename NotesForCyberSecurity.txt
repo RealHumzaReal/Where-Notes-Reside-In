@@ -256,4 +256,13 @@ System Monitoring
 	If you want to see your resource ussage, try htop and not top, since htop is just better, after that press q to quit. Then to check logs
 	do "cat /var/logsyslog" this would check your general system logs.
 
+
+
 System Security
+	
+	What is System Security?
+		System security is the practice of protecting computer systems and networks from unauthorized acess, 
+		cyber attacks, data breaches, and other forms of exploitation. the whole goal behind safe gaurds are to confidentiality, integrity
+		and availablility, confidentiality is when it ensures that sensitive info is only accessible to those who are authorized to see it
+		integrity is when it ensures data remains the same and never changed. Availability ensures that the system, applications and 
+		data are available to users when needed.
