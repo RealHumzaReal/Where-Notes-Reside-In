@@ -289,5 +289,45 @@ System Security
 		the first part refers to the owner and then the 2nd part refers to the group and lastly the others. owners can read and write, groups and others can read. 1 is the number
 		of links (like how many hard links are going to be point at a file or directory.) the username is the owner of said file and the groupname is what group is associated with
 		the file, 1234 is the size of it and the rest is self explanitory.
-	
+	User management
+		To add a user is the command
+		sudo adduser lloyd
+		when doing this it will create a new home directory assigned with its own UID and prompting it to give a password for this user. You can add info if you want like full name phone
+		number and more, this user will be automatically added to default groups which is the users in this case.
 		
+		To modify a user is to do the command
+
+		sudo usermod -l greenninja  lloyd
+				(new user)(old user)
+
+		this would make a new name for the user.
+
+
+		sudo usermod -d /home/path greenninja
+
+		this would move the users home directory to somewhere else 
+
+
+		sudo usermod -aG sudo greenninja
+
+		this will make greenninja a superuser (-a means append and -G specifies the group to add the user to)
+
+
+		sudo usermod -s /bin/bash greenninja
+		
+		this will change the default shell for the user to bash.
+
+
+		sudo usermod -L greenninja
+		
+		this would lock the user out from there account
+
+
+		sudo usermod -U greenninja
+
+		this would unlock the account
+		
+		To remove a user is 
+		sudo deluser greenninja
+		not much to explain it just literally deletes it. Along with greenninja's home directory
+	Firewall basics
