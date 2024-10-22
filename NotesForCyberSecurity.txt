@@ -49,6 +49,10 @@ o	chmod 644 [filename] = sets it so the owner can read and write but the group a
 	6 = read and write
 	5 = read and execute
 	4 = read
+	3 = write and execute
+	2 = write
+	1 = execute
+	0 = YOU HAVE NOOTHHHINNNGGG
 
 
 Using Sudo and its superuser privileges
@@ -190,20 +194,22 @@ Bash Scripting:
 			read $va1 $va2 -- it will say hello world but turn the hello into a variable and the world into another variable.
 			echo $va1 -- it will say hello
 			echo $va2 -- it will say world
+		If
+			if statements are when it checks if something is true
 		Heres a custom script that can check if a directory exists,
 		if it doesn't it will create one
 		
 		
 		#!/bin/bash
 
-		DIR="awesomesauce"
+		DIR="awesomesauce" --creating the variable name
 
-		if [ -d "$DIR" ]; then
+		if [ -d "$DIR" ]; then --if the directory is true it will just respond with the echo command below
 		    echo "Directory $DIR already exists."
-		else
+		else --if it's false then it will say the lines of command below
 		    echo "Directory $DIR does not exist. Creating 
 		    it now..."
-  		  mkdir "$DIR"
+  		  mkdir "$DIR" --creates directory
    		 echo "Directory $DIR created successfully."
 		fi
 
@@ -331,3 +337,37 @@ System Security
 		sudo deluser greenninja
 		not much to explain it just literally deletes it. Along with greenninja's home directory
 	Firewall basics
+		A firewall is the barrier that establishes trust between internal networks (ex: home) and untrusted external networks 
+		(ex: internet) the fire wall decides what should be allowed or be blocked based on its ruling.
+		UFW which means Uncomplicated Firewall makes it easy for users to configure and manage their firewall rules on linux system
+		usually its preinstalled, but if it isnt you have to use sudo apt install ufw to get it.
+		
+		sudo ufw enable -- Booted it up
+		sudo ufw disable -- Powering it down
+		sudo ufw status -- Check what the rules are set as
+		sudo ufw status verbose -- More details of the rules
+		sudo ufw allow 80 -- Allow's a port like ex would be something like port 80
+		sudo ufw allow 80/tcp -- it allowes it but with a specified protocal.
+		sudo ufw allow http -- allows services that have http in it.
+		sudo ufw allow 1000:2000/tcp -- allows services in the range of ports 1000 to 2000
+		sudo ufw allow from 242.452.2.421 -- allows a specific ip address
+		sudo ufw allow from 242.452.2.421 to any port 22 -- allows only this specfic adress from this specific port
+
+		sudo ufw deny 22 -- dennies any ports that are 22
+		sudo ufw deny 53/udp -- dennies protocalls
+		sudo ufw deny from 242.452.2.421 -- dennies specific ip address' in
+
+		sudo ufw delete allow 80 -- deletes the rule for a port
+		sudo ufw delete allow from 242.521.5.521 to any port 22 -- deleteing the rule by specifying it
+
+		sudo ufw default deny incoming -- dennies all incoming connections by default
+		sudo ufw default allow outgoing --  allows all outgoing connections to come in by default
+
+		sudo ufw logging on -- enable logging
+		sudo ufw logging off -- disable logging
+		
+
+	Now that we know all this, say you want to make a folder thats only for groups to view but not users. what command you would exacute
+	on it is chmod 740. 7 so the admins can read write and execute. 4 so groups can read whats inside of the folder. and 0 so users cannot
+	see whats in it. inside it we will make a text file that only admins can edit like a set of rules for the groups. so we would
+	chmod 740 grouprules.txt
