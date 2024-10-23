@@ -196,6 +196,28 @@ Bash Scripting:
 			echo $va2 -- it will say world
 		If
 			if statements are when it checks if something is true
+
+		Regex
+			Regex (Regular Expression) is a pattern used to match text.
+			^[0-9]+$ means that the input will be made of 0-9 digits and nothing else. the start of the input is ^ and then $
+			is the end input. 0-9 means the digits inbetween those numbers and the + means at least more then one.
+
+			^\w+\.pdf$ will specify which file type you want to open like in this it will be .pdf's
+
+			. allows you to select any character including special characters and spaces
+			
+			bar ber bir bor bur say if you want to type all but dont wanna, do this b[aeiou]r 
+			b[^eo]r would allow you to deselect certain characters like ber and bor.
+			
+			say you had the alphabet and you did [e-o] it would select the strings that are inbetween e-o. same can happen with
+			variables
+
+			if you just want to select full characters like "hey there mister hey there" and you just want it to select hey type
+						
+	
+			
+
+
 		Heres a custom script that can check if a directory exists,
 		if it doesn't it will create one
 		
