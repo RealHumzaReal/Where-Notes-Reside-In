@@ -197,8 +197,8 @@ Bash Scripting:
 		If
 			if statements are when it checks if something is true
 
-		Regex
-			Regex (Regular Expression) is a pattern used to match text.
+	Regex
+		Regex (Regular Expression) is a pattern used to match text.
 			^[0-9]+$ means that the input will be made of 0-9 digits and nothing else. the start of the input is ^ and then $
 			is the end input. 0-9 means the digits inbetween those numbers and the + means at least more then one.
 
@@ -213,9 +213,37 @@ Bash Scripting:
 			variables
 
 			if you just want to select full characters like "hey there mister hey there" and you just want it to select hey type
-						
-	
+
+		Repititions
+			some special characters would be used to sepcify how many times a character is going to be repeated in the text. These characters are the + the asterisk and * and ?
 			
+			we would put an asterisk after a character to indicate that the character may either not match at all or match many times. Like example here: if we indicate letter
+			e should never occur in the text or it can occur once or more side by side we could say something like be*r for the example it would be br ber beer.
+
+			
+			we would put a plus sign to indicate a character can occur one or more times. This would indicate that e occurs one or more times typing be+r			
+	
+			the question mark indicates when something is optional. We would put it after a character for example color, colour have almost the same string but there is an extra u.
+			so we would put colou?r
+
+			To express a certain number of occurences within a character at the end we would write with the fancy bracjets {} along how many times we want to counter it. For example
+			we have ber beer beeer beeeer. We want to encounter e 2 times in a row so we would say be{2}r
+
+			To express at least a certain number of occurences of a character, we would write {3,} so the beeer beeeer would be highlighted.
+
+			To show we want an occurance of a character in a certain number range we write {1,3} for every inclusive interval. for ex we would write be{1,3}r
+
+			putting [0-9]{4} will count digits that will only be side by side making it 4 digits.
+		
+		Parenthesess
+			We can group an expression and use thse groups to reference or enforce some rules. like if we have some like
+			ha-ha,haa-haa
+			so if we do (haa) it will only take expressions within those parenthesess
+			
+
+			
+
+
 
 
 		Heres a custom script that can check if a directory exists,
