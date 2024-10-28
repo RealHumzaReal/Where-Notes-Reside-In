@@ -87,12 +87,12 @@ Every value we go up by we multiply it by 2. For example we start with the value
 value that has a 1 is true and every value that has a 0 is false
 Binary is the language computers speak 
 Logic Gates are terms such as
-Is Not And If Nand
-Is is basically if A is True
-Not is basically if A is not True
-And is basically if A and B are true 
-If is basically if A or B are true
-Nand is basically if A and B are not true
+"Is Not" And If Nand
+"Is" is basically if A is True
+"Not" is basically if A is not True
+"And" is basically if A and B are true 
+"If" is basically if A or B are true
+"Nand" is basically if A and B are not true
 
 
 
@@ -239,6 +239,10 @@ Bash Scripting:
 			We can group an expression and use thse groups to reference or enforce some rules. like if we have some like
 			ha-ha,haa-haa
 			so if we do (haa) it will only take expressions within those parenthesess
+
+			to group you can do \1 or \2 for ex, (ha)-\1,(haa)-\2
+
+			
 			
 
 			
