@@ -98,6 +98,10 @@ Logic Gates are terms such as
 
 Terminology
 IP Address is basically the home for your devices, this helps your device be able to interact with other devices.
+TVE - Technical Vocation Education is an educational pathway that provides students with the knowledge and skills
+needed to preform specific tasks and roles within various industries. To get this certificate you would need to
+go for a grade 10 cyber security course, then two grade 11 courses and then one grade 12 course along with 2 years
+of cyber patriot
 
 
 
