@@ -157,6 +157,9 @@ Bash Scripting:
  			 echo "Iteration $i" -- will do this 1-5 times
 			done
 			
+			while true; do
+			this command would do it for an infinate loop to keep something doing it forever.
+			
 		Conditionals:
 			Preform tasks based on conditions
 			ex:
@@ -189,6 +192,10 @@ Bash Scripting:
 			
 			echo "hey its me cool guy!"
 
+			echo -n "hey\r" gives the option to prevent a new line to start after saying something so it
+			     stays on the same line. the \r allows the line to be over written
+
+
 		Read
 			read is when the code reads what the user has inputted and splits it into strings assigning each new word to an argument
 			ex:
@@ -200,6 +207,15 @@ Bash Scripting:
 			echo $va2 -- it will say world
 		If
 			if statements are when it checks if something is true
+		Wait
+			the wait command forces the terminal to wait when another is running
+		sleep # &
+			this would make the terminal wait for a number of seconds.
+		pid=$!
+			this would capture the PID of the background process. PID means processing the id
+		exec 0</dev/null
+			this command redirects the input of the user so it cannot type in the said amount of time the code says. 
+			but exec 0<&- makes it so it can type again.
 
 	Regex
 		Regex (Regular Expression) is a pattern used to match text.
