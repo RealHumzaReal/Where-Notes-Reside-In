@@ -153,9 +153,12 @@ Bash Scripting:
 			To repeat the same command or item
 			ex:
 			
-			for i in {1..5}; do --every 1-5 times it "does"
+			for i in {1..5}; do --every 1-5 times it "does" what is inbetween the next line of code
  			 echo "Iteration $i" -- will do this 1-5 times
-			done
+
+			for ((i=0; i<${#text}; i++)) --this would loop things every time the variable goes up.
+			if i=1 then then it will print whatever were trying to pring by 1. Making this a loop 
+			that would only go for a bit just for every new variable
 			
 			while true; do
 			this command would do it for an infinate loop to keep something doing it forever.
@@ -192,9 +195,18 @@ Bash Scripting:
 			
 			echo "hey its me cool guy!"
 
-			echo -n "hey\r" gives the option to prevent a new line to start after saying something so it
+			echo -ne "hey\r" gives the option to prevent a new line to start after saying something so it
 			     stays on the same line. the \r allows the line to be over written
 
+			echo
+			for (( i = 0; i < 33; i++ )); do
+ 				echo -n "${text:$i:1}"
+				sleep 0.1
+ 				wait
+			done
+			
+			This line of commands would sort of play text in an animated manor to make it look like
+			its typing on its own
 
 		Read
 			read is when the code reads what the user has inputted and splits it into strings assigning each new word to an argument
@@ -216,6 +228,40 @@ Bash Scripting:
 		exec 0</dev/null
 			this command redirects the input of the user so it cannot type in the said amount of time the code says. 
 			but exec 0<&- makes it so it can type again.
+
+
+
+
+
+
+
+
+
+Example Scripts
+
+
+Questions:
+	read word --this would read what word you just said
+
+		if [ "$word" -eq 9]; then --this would check if the statement is true. If the variable you say is equal to 9.
+			echo "woah you did it!" --this is what it will say if your right
+		else -- if the statement is false then it will say the thing below
+			echo "womp womp your WRONG" --this is what it will say if your wrong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	Regex
 		Regex (Regular Expression) is a pattern used to match text.
