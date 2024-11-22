@@ -43,7 +43,8 @@ Changing Permissions
 o	chmod u+x [filename] – When doing this it adds the execute permission for said user.
 o	chmod g-w [filename] – When doing this it removes the permissions for the user to write other people's permissions
 Numeric method:
-o	chmod 755 [filename] - Sets permissions to rwxr-xr-x meaning that the user can read, write and execute, Group can red but it cannot write and it can execute, and finally for others they cant do the same. 
+o	chmod 755 [filename] - Sets permissions to rwxr-xr-x meaning that the user can read, write and execute, Group can red but it cannot write and it can execute, and finally 
+				for others they cant do the same. 
 o	chmod 644 [filename] = sets it so the owner can read and write but the group and others can only read. 6 = read and write 4 = read
 	7 = read write and execute
 	6 = read and write
@@ -62,7 +63,8 @@ o	sudo = sudo means Super User Do. It allows you to do things you cant normally 
 o	sudo apt update – This would update all the packages
 o	su – This would mean switch user.
 
-superbonniefanb@awesomesaucer:~$ - at the start of this directory is our user. This is the user that we are logged into, next awesomesaucer is the pc name, that’s what other networks will read it as. The: is the start of directory, ~ means superbonniefanb/home and $ means to type here.
+superbonniefanb@awesomesaucer:~$ - at the start of this directory is our user. This is the user that we are logged into, next awesomesaucer is the pc name,
+that’s what other networks will read it as. The: is the start of directory, ~ means superbonniefanb/home and $ means to type here.
 
 
  
@@ -102,18 +104,21 @@ TVE - Technical Vocation Education is an educational pathway that provides stude
 needed to preform specific tasks and roles within various industries. To get this certificate you would need to
 go for a grade 10 cyber security course, then two grade 11 courses and then one grade 12 course along with 2 years
 of cyber patriot
+Meta Data -
+Aggrigation -
 
 
 
 Git and its neat stuff
 git init – this would initialize a git repository.
-Repository often said as “repo” is a project folder that contains your project files and the complete history of its changes, this goes from all the way back to when the game was created and who created it.
+Repository often said as “repo” is a folder that contains your files and the complete history of its changes, this goes from all the way back to when the game was created and who created it.
 Key concepts or repo
 1. Working Directory
 This folder on your pc is where you actively work in with your projects and shows the current state of the file
 2. Staging Area (or index)
 This is the temporary storage area. This is where Git keeps track of changes that will go into your next commit. 	Before you commit changes, you add them to the staging area using git add.
 	3. Commit history
+	
 
 
 
@@ -475,7 +480,7 @@ System Security
 
 		sudo ufw deny 22 -- dennies any ports that are 22
 		sudo ufw deny 53/udp -- dennies protocalls
-		sudo ufw deny from 242.452.2.421 -- dennies specific ip address' in
+		sudo ufw deny from 242.452.2.421 -- dennies specific ip address' within.
 
 		sudo ufw delete allow 80 -- deletes the rule for a port
 		sudo ufw delete allow from 242.521.5.521 to any port 22 -- deleteing the rule by specifying it
@@ -491,3 +496,20 @@ System Security
 	on it is chmod 740. 7 so the admins can read write and execute. 4 so groups can read whats inside of the folder. and 0 so users cannot
 	see whats in it. inside it we will make a text file that only admins can edit like a set of rules for the groups. so we would
 	chmod 740 grouprules.txt
+
+
+
+User Types defines what you CAN and CANNOT do, for example on capcut you can do many things but certain things require you to be a paying user to unlock those features such as special effects,
+you could view these things but never be able to use these thing. The Users are sort of a way to hold permissions, like a folder. and in these folders there are the things they can do.
+
+Permissions act like sort of levels of access. For example it can make it so only admins can open a certain file but any other user cannot like guests and users. So User types are basically
+the level of access someone can have and permissions are the gateway to those users of higher levels to access
+
+now that we know what these things are, what are the main 3 user types in linux
+
+One of which is the root user. This account is the best one to be in. It can preform admin tasks and can access anything, in a way its like the owner of a house. This account will be made
+automatically when installing linux this will default you to be the most privileged account. It cannot simply be deleted but can be disabled, with the crazy power of this account its usually
+used for administrative tasks but not regular tasks, reason being that when you edit or delete any config files or stop any services it will forcefully keep it like that since you are highest
+of power and if you even accidently did something like this it cannot be reversed as root. usually this account is just left disabled so users cant get into it in any way possible.
+
+The second main users are the Regular users. You can moderately customizable your pc to your liking. Regular users can just do things normal every day tasks
