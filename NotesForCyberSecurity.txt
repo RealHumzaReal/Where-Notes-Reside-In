@@ -106,19 +106,23 @@ go for a grade 10 cyber security course, then two grade 11 courses and then one 
 of cyber patriot
 Meta Data -
 Aggrigation -
-
+Repository - often said as “repo” is a folder that contains your files and the complete history of its changes, this goes from all the way back to when the game was created and who created it.
 
 
 Git and its neat stuff
 git init – this would initialize a git repository.
-Repository often said as “repo” is a folder that contains your files and the complete history of its changes, this goes from all the way back to when the game was created and who created it.
-Key concepts or repo
-1. Working Directory
-This folder on your pc is where you actively work in with your projects and shows the current state of the file
-2. Staging Area (or index)
-This is the temporary storage area. This is where Git keeps track of changes that will go into your next commit. 	Before you commit changes, you add them to the staging area using git add.
-	3. Commit history
-	
+git add [filename] - this would add a file to the staging area
+	git add . - this is an option to stage everything
+git commit - this would add something to a branch or also said as adding all changes to the staging area to commit it all
+git checkout [branchname] - this would swap you to a different branch
+	git checkout -b [branchname] -  this would create and switch to a new branch
+git merge [branchname] - this would merge a branch your on with another specified branch
+git log - shows the commit messages you have done so far
+git remote add origin [URL] - this would link your repo to an online repo from github
+git push origin [branchname] - this would push changes onto a specific branch online
+git pull origin [branchname] - this would pull changes from a different online repo into your local repo
+
+
 
 
 
@@ -497,19 +501,30 @@ System Security
 	see whats in it. inside it we will make a text file that only admins can edit like a set of rules for the groups. so we would
 	chmod 740 grouprules.txt
 
+System
+The system is linux, the operating system. EVERYTHING is in the system.
 
-
+User Types
 User Types defines what you CAN and CANNOT do, for example on capcut you can do many things but certain things require you to be a paying user to unlock those features such as special effects,
 you could view these things but never be able to use these thing. The Users are sort of a way to hold permissions, like a folder. and in these folders there are the things they can do.
 
+Permissions
 Permissions act like sort of levels of access. For example it can make it so only admins can open a certain file but any other user cannot like guests and users. So User types are basically
 the level of access someone can have and permissions are the gateway to those users of higher levels to access
-
 now that we know what these things are, what are the main 3 user types in linux
 
+Root Users
 One of which is the root user. This account is the best one to be in. It can preform admin tasks and can access anything, in a way its like the owner of a house. This account will be made
 automatically when installing linux this will default you to be the most privileged account. It cannot simply be deleted but can be disabled, with the crazy power of this account its usually
 used for administrative tasks but not regular tasks, reason being that when you edit or delete any config files or stop any services it will forcefully keep it like that since you are highest
 of power and if you even accidently did something like this it cannot be reversed as root. usually this account is just left disabled so users cant get into it in any way possible.
 
+Regular users
 The second main users are the Regular users. You can moderately customizable your pc to your liking. Regular users can just do things normal every day tasks
+
+
+
+File Systems
+File systems controls how data is stored and recieved. It contains all the large parts of data and makes it easier to tell what information starts and ends then next begins. The file system can
+be defined by the system but it is also governed by the permissions, since the permissions are basically the rules and rules will always apply to something. The users have access to file systems
+aswell, they use the file system to affect the system
