@@ -528,3 +528,50 @@ File Systems
 File systems controls how data is stored and recieved. It contains all the large parts of data and makes it easier to tell what information starts and ends then next begins. The file system can
 be defined by the system but it is also governed by the permissions, since the permissions are basically the rules and rules will always apply to something. The users have access to file systems
 aswell, they use the file system to affect the system
+
+Definitions!
+
+Government
+A government is a system that is used to conduct policies action and afairs of a state/community
+
+Society
+A society can mean many things, it can mean everyone in general, or a specific group such as an organization sometimes it's often used in names.
+
+Community
+A group of people that live among eachother with characteristics that make them all the same, it could be they're interests, race, gender and what not
+
+Legislation
+A law that provides rules of conduct
+
+Law vs. by-law
+The difference between law and by law is that with by-laws, it was created by someone that isnt that powerful in terms of ranking, so it would derive its authority.
+
+Legal and illegal
+Legal means it's allowed and illegal means it's not allowed.
+
+Privacy
+When you are free from being seen or observed by others around you in public
+
+Information Security
+Info security protects information about you from unauthorized users such as sensitive info, any recordings and so on.
+
+Security
+Security means when you are free from any danger or threat.
+
+Operational Security (OpSec)
+This protects any sensitive information from any unauthorized users either.
+
+Crown Company/Organization
+A entity owned by a government or legal organization that structures itself like a legal organization. 
+
+Public Company/Organization
+A company that freely trades with other in exchange for something else
+
+Private Company/Organization
+They do the same but are in private, they trade in private and are a private company.
+
+Nonprofit Company/Organization
+Nonprofit companies are usually associations or clubs that arn't used for trade but more of organized and operated for social welfare
+
+Not-for-profit Company/Organization
+A legal entity that is organized and operated for public or social benefit and are set with an objective for social well fare for society
